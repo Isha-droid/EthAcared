@@ -5,14 +5,13 @@ import './FileContract.sol';
 import './StudentContract.sol';
 
 contract SchoolContract {
-    
-    FileContract filecontract;
-    StudentContract studentcontract;
-    
+    FileContract public filecontract;
+    StudentContract public studentcontract;
+
     constructor(address _filecontract, address _studentcontract) {
         filecontract = FileContract(_filecontract);
         studentcontract = StudentContract(_studentcontract);
     }
-    
+
     // Additional functions and logic for SchoolContract can go here
 }
